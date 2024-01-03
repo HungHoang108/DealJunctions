@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DealJunctions.Models
+namespace DealJunctions.Entities.Models
 {
     public class Employee : BaseModel
     {

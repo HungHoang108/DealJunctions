@@ -1,4 +1,4 @@
-﻿namespace DealJunctions.Models
+﻿namespace DealJunctions.Entities.Models
 {
     public abstract class BaseModel
     {
