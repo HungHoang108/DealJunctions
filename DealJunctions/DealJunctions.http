@@ -1,0 +1,6 @@
+@DealJunctions_HostAddress = http://localhost:5258
+
+GET {{DealJunctions_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
