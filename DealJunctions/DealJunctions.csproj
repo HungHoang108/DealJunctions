@@ -25,7 +25,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="Repository\Contracts\" />
     <Folder Include="Repository\Repository\" />
-    <Folder Include="Service\Contracts\" />
     <Folder Include="Service\Service\" />
     <Folder Include="WebApi\Configurations\" />
     <Folder Include="WebApi\Controllers\" />
