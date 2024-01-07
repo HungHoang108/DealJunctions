@@ -10,12 +10,12 @@ namespace DealJunctions.Repository.Data
           base(options)
         { }
 
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<Company> Companies { get; set; }
-        public DbSet<Notification> Notifications { get; set; }
-        public DbSet<Promotion> Promotions { get; set; }
-        public DbSet<PromotionStatistic> PromotionStatistics { get; set; }
-        public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<Employee> Employees { get; set; } = null!;
+        public DbSet<Company> Companies { get; set; } = null!;
+        public DbSet<Notification> Notifications { get; set; } = null!;
+        public DbSet<Promotion> Promotions { get; set; } = null!;
+        public DbSet<PromotionStatistic> PromotionStatistics { get; set; } = null!;
+        public DbSet<Subscription> Subscriptions { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
