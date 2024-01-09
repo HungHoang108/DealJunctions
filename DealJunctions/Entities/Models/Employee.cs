@@ -8,9 +8,14 @@ namespace DealJunctions.Entities.Models
     {
         [Key]
         public override int Id { get; set; }
+
         [NotMapped]
         public Company? Company { get; set; } = null!;
         public int CompanyId { get; set; }
+
+        [NotMapped]
+        public Subscription Subscription { get; set; } = null!;
+        public int SubscriptionId { get; set; }
 
         [Required]
         [StringLength(100)]

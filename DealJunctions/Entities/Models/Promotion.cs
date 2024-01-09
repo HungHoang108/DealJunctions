@@ -5,6 +5,8 @@ namespace DealJunctions.Entities.Models
 {
     public class Promotion : BaseModel
     {
+        [NotMapped]
+        public Company? Company { get; set; } = null!;
         public int CompanyId { get; set; }
 
         [Required]
