@@ -1,10 +1,11 @@
 ﻿using DealJunctions.Entities.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DealJunctions.Repository.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<Employee>
+    public class ApplicationDbContext : IdentityDbContext<Employee, IdentityRole<int>, int>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) :
           base(options)
@@ -19,10 +20,14 @@ namespace DealJunctions.Repository.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Employee>()
                 .HasOne(e => e.Company)
                 .WithMany()
                 .HasForeignKey(e => e.CompanyId);
+
+            modelBuilder.Entity<Subscription>().Property(x => x.Price).HasPrecision(7, 2);
         }
     }
 }

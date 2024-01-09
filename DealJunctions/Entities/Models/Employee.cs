@@ -4,11 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DealJunctions.Entities.Models
 {
-    public class Employee : IdentityUser
+    public class Employee : IdentityUser<int>
     {
         [Key]
-        public override string Id { get; set; } = string.Empty;
-
+        public override int Id { get; set; }
         [NotMapped]
         public Company? Company { get; set; } = null!;
         public int CompanyId { get; set; }
