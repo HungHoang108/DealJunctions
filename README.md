@@ -1,7 +1,7 @@
 # DealJunctions
 ER diagram: https://lucid.app/documents/view/c87b07c7-4522-4d56-a3bd-a33e8aed1554
 
-## Description:
+## Description (ongoing development)
 This applicationi allows online seller to:
 - Register and login with email, gmail, or facebook account
 - Create, edit, delete discount programs for online shoppers
